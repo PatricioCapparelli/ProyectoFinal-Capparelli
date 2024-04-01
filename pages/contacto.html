@@ -4,19 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/images/favicon-ferrari.png" type="image/x-icon">
+    <title>ContactoR66</title>
 </head>
-<body>
+<body class="bg-black">
     <div class="container">
-
-        <form class="row">
-
-        <div class="col-6">
-            <label for="email-input" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email-input" placeholder="escribe tu email">
+        <div class="row">
+            <div class="col bg d-none d-lg-block">
+                <div class="embed-responsive embed-responsive-16by9 mt-5 ">
+                    <iframe class="rounded" width="653" height="480" src="https://www.youtube.com/embed/ObE8KFDFmt8?autoplay=1" title="AMG GTR PRO on AUTOBAHN [NO SPEED LIMIT] by AutoTopNL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-end">
+                    <a href="../index.html" target="_blank"><img class="rounded mt-1" src="../assets/images/imagenlogo.jpg" width="100" alt=" logo velocimetro"></a>
+                    <h2 class="fw-bold text-center pt-5 mb-5 py-5 text-warning">Ruta 66</h2>
+                    <form action="#">
+                        <div class="mb-4 text-white">
+                            <label for="email" class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-4 text-white">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="password">
+                        </div>
+                        <div class="mb-4 form-check text-white">
+                            <input type="checkbox" name="connected" class="form-check-input">
+                            <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                        </div>
+                        <div class="d-grid text-white">
+                            <button type="submit" class="btn btn-danger">Iniciar Sesion</button>
+                        </div>
+                        <div class="my-3 text-white">
+                            <span>No estas registrado? <a href="#">Crea tu cuenta!</a></span>
+                            <span><a href="#">Recuperar cuenta</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row p-5 bg-dark text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3 text-warning">Ruta 66</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Contacto</p>
+                <div class="mb-2">
+                    <a class="text-secondary fs-5 text-decoration-none" href="#">Email</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary fs-5 text-decoration-none" href="#">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary fs-5 text-decoration-none" href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Links</p>
+                <div class="mb-2">
+                    <a class="text-secondary fs-5 text-decoration-none" href="#">Terminos & condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary fs-5 text-decoration-none" href="#">Politica de privacidad</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Nosotros</p>
+                <div class="mb-2">
+                    <a class="text-secondary fs-5 text-decoration-none" href="./agencia.html">
+                        Conoce mas sobre nuestra agencia y modelos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
