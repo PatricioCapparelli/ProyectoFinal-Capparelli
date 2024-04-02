@@ -61,7 +61,7 @@ p {
     background-color: #000000;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px 10px auto auto auto 800px;
+    grid-template-rows: 100px 150px 10px auto auto auto 800px;
     grid-template-areas:
         "header header"
         "nav-izquierda nav-derecha"
@@ -74,7 +74,7 @@ p {
     ;
 }
 
-header {
+header{
     display: flex;
     justify-content: center;
     grid-area: header;
@@ -94,14 +94,20 @@ header h2{
     padding-top: 30px;
 }
 
+header h3{
+    text-align: center;
+}
+
 div.nav-izquierda{
     grid-area: nav-izquierda;
     flex-direction: column;
+    padding-top: 15px;
 }
 
 div.nav-derecha{
     grid-area: nav-derecha;
     flex-direction: column;
+    padding-top: 15px;
 }
 
 .nav-izquierda ul,.nav-derecha ul{
@@ -137,7 +143,11 @@ section.img-parrafo:nth-last-child(1){
 section.img-parrafo img {
     width: 100%;
     height: auto;
-    
+    object-fit: cover;
+}
+
+aside{
+    flex-wrap: wrap;
 }
 
 img{
@@ -150,11 +160,17 @@ img{
 footer {
     padding-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 15px;
     grid-area: footer;
     justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+footer.video-container-uno{
+    background-color: #15292F;
 }
 
 footer img {
@@ -164,9 +180,9 @@ footer img {
 
 /*  desktop */
 
-@media (min-width: 1331px) {
+@media (min-width: 1331px){
     .grid-container {
-        background-color: #494242;
+        background-color: black;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 100px auto 300px;
         grid-template-areas:
@@ -188,11 +204,16 @@ footer img {
         justify-content: center;
         text-align: center;
         align-items: center;
+        background-image: none;
     }
     .grid-container header h1{
         display: flex;
         align-items: center;
         font-size: 35px;
+    }
+
+    .grid-container-image{
+        background-image: none;
     }
 
     .grid-container header h2{
@@ -207,7 +228,7 @@ footer img {
     .grid-container header h1{
         padding: 20px 0;
     }
-    
+
     .nav-izquierda{
         padding-top: 30px;
     }
@@ -244,7 +265,7 @@ footer img {
         display: flex;
         flex-direction: column;
     }
-    
+
     section.parrafo p:first-child{
         background-color: #091016;
         border-radius: 8px 8px 0 0;
@@ -318,6 +339,7 @@ footer img {
     }
 
 }
+
 
 /* Agencia */
 
@@ -407,6 +429,7 @@ footer img {
         width: 100%;
         height: 200px;
         border-radius: 10px;
+        object-fit: cover;
     }
     
     .main{
@@ -454,7 +477,7 @@ footer img {
     }
     
     .main .best-car{
-        background-color: #070F2B;
+        background-color: #15292F;
         padding: 5px;
         color: white;
         border-radius: 10px;
@@ -478,7 +501,10 @@ footer img {
             display: flex auto;
             height: 350px;
             width: 100%;
-            background-color: #070F2B;
+            background-color: #15292F;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
         }
     
         aside .video-img img{
@@ -486,6 +512,11 @@ footer img {
             height: 300px;
             background-size: cover;
             background-position: center;
+            object-fit: cover;
+        }
+        
+        img{
+            object-fit: cover;
         }
         
         aside{
@@ -518,12 +549,15 @@ footer img {
         aside{
             height: auto;
         }
+        img{
+            object-fit: cover;
+        }
     }
     
     .video-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 20px ;
         padding-top: 30px;
         background-color: black;
