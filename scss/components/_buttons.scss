@@ -1,0 +1,72 @@
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    font-size: 18px;
+    color: aqua;
+    
+    
+}
+
+.navbar ul li a{
+    color: $color-text-secondary;
+    padding: 0 5px;
+    flex-direction: column;
+
+}
+
+.navbar ul li a:hover{
+    background-color: $color-primary;
+    color: $color-text;
+}
+
+.main .best-car{
+    background-color: $color-secondary;
+    padding: 5px;
+    color: $color-text-secondary;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.main .best-car:hover{
+    background-color: $color-text;
+}
+.video-link h4{
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    color: $color-text-secondary;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    margin-top: 173px;
+    margin-left: 5px;
+    transition: all 0.3s;
+    flex-wrap: wrap;
+    
+}
+
+.video-link:hover h4{
+    opacity: 1;
+}
+
+// footer
+
+.end-line ul li{
+    text-align: center;
+    list-style-type: none;
+    color: wheat;
+}
+.end-line ul{
+    padding-top: 15px;
+    
+}
+
+.end-line a{
+    display: flex;
+    justify-content: center;
+}
+
+.end-line ul li:nth-child(even)::marker{
+    content: "🚗";
+    color: $color-text-secondary;
+}

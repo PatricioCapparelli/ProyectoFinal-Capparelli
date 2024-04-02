@@ -1,0 +1,15 @@
+{
+  "name": "cap66",
+  "version": "1.0.0",
+  "description": "proyecto final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PatricioCapparelli"
+  },
+  "author": "Patricio Capparelli",
+  "license": "ISC"
+}

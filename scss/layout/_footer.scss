@@ -1,0 +1,17 @@
+.video-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px ;
+    padding-top: 30px;
+    background-color: black;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    & .end-image{
+        border-radius: 10px;
+        width: 150px;
+        height: auto;
+    }
+    
+}

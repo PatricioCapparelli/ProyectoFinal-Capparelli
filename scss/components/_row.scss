@@ -1,0 +1,23 @@
+.row{
+    aside{
+        flex:30 auto;
+        padding: 20px;
+        background-color: #15292F;
+        height: auto;
+
+        .video-img img{
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        }
+    .main{
+        flex: 70%;
+        height: 100%;
+        background-color: #1A3138;
+        padding: 20px;
+
+        
+    }
+    }

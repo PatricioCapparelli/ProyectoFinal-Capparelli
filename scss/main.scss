@@ -1,0 +1,51 @@
+@import "utilities/variables";
+@import "base/reset";
+@import "base/fonts";
+@import "base/typography";
+@import "components/buttons";
+@import "layout/header";
+@import "layout/layout";
+@import "layout/navegacion";
+@import "layout/footer";
+@import "components/row";
+
+// condicionales
+$page-type: "agencia";
+
+@if $page-type == "agencia" {
+.main {
+    background-color: #1A3138;
+}
+}
+
+// bucles
+
+$colors: red, blue, white , black , green, yellow, orange, gray, pink, brown;
+
+@for $iterador from 1 through length($colors){
+    .color-#{nth($colors, $iterador)}{
+        background-color: nth($colors, $iterador);
+    }
+}
+
+// maps
+
+$colors:(
+    text: #9E1717,
+    text-secondary: white,
+    primary: black,
+    secondary: #070F2B,
+);
+
+@each $color, $value in $colors{
+    .bg-#{$color}{
+        background-color: $value;
+    }
+}
+
+// map-get
+
+.main .best-car{
+    background-color: map-get($colors, secondary);
+}
+
