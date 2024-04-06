@@ -2,22 +2,22 @@
     aside{
         flex:30 auto;
         padding: 20px;
-        background-color: #15292F;
+        background-color: $backgraund-quaternary;
         height: auto;
-
+        
         .video-img img{
             width: 100%;
             height: 300px;
             background-size: cover;
             background-position: center;
         }
-        }
-    .main{
+        
+        .main{
         flex: 70%;
         height: 100%;
-        background-color: #1A3138;
+        background-color: $background-quinary;
         padding: 20px;
+        }
+        }
+}
 
-        
-    }
-    }

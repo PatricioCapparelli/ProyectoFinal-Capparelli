@@ -11,5 +11,8 @@
     "url": "https://github.com/PatricioCapparelli"
   },
   "author": "Patricio Capparelli",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }

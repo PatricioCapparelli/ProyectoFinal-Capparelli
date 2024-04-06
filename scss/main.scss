@@ -49,4 +49,49 @@ $colors:(
     background-color: map-get($colors, secondary);
 }
 
-// extend
+// extend (ejemplo)
+
+.alert{
+    padding: 5px;
+    margin: 7px;
+    border-radius: 1px;
+}
+
+.alert-danger{
+    @extend .alert;
+    background-color: #9E1717;
+    color: white;
+}
+
+.alert-succes{
+    @extend .alert;
+    background-color: green;
+    color: white;
+}
+
+// mixin (ejemplo)
+
+@mixin create-card($color){
+    padding: 5px;
+    border-radius: 1px;
+    border: solid 1px black;
+}
+
+@if $color == primary {
+    background-color: $primary-color;
+} @else if $color == secondary {
+    background-color: $secondary-color;
+} @else if $color == tertiary {
+    background-color: $tertiary-color;
+} @else {
+    background-color: $color;
+}
+
+
+.card-primary {
+    @include create-card(primary)
+}
+
+.card-secondary{
+    @include create-card(secondary)
+}

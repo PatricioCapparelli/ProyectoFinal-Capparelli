@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Route 66 represents your interest in cars. Provides information for the user.">
+    <meta name="keywords" content="cars, motors, tires, vehicle, technology, ">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="assets/images/favicon-ferrari.png" type="image/x-icon">
     <title>Ruta66</title>
@@ -86,6 +88,9 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+        <div class="card-img-overlay text-center fs-3">
+            <b>El auto de tus sueños esta aquí 🏁</b>
+        </div>
     </div>
     <!-- Principal -->
     <section class="w-5 mx-auto text-center pt-5">
@@ -95,6 +100,48 @@
         <p class=" p-3 fs-4">La firma nipona develó en Estados Unidos la segunda generación de su B-SUV, que debutará ante el público la semana que viene en el Salón de Nueva York. Se destaca por su diseño completamente reformulado, un importante incremento en sus dimensiones.</p>
     </section>
     <hr>
+    <!-- Search -->
+    <div class="search-home bg-secondary p-4 d-block">
+        <h2 class="text-center fs-3">
+            <b>BUSCA TU AUTO</b>
+        </h2>
+        <form class="form" id="form1" name="form1">
+            <input type="hidden" name="formtoken">
+            <div class="row">
+                <div class="col-md-3">
+                    <label >
+                        <b>MARCA</b>
+                    </label>
+                    <select name="marca" id="marca" class="form-control search-slt">
+                        <option value=""></option>
+                        <option value="2332">CHEVROLET</option>
+                        <option value="21321">FIAT</option>
+                        <option value="34455">NISSAN</option>
+                        <option value="232">FORD</option>
+                        <option value="4325">RENAULT</option>
+                        <option value="10">TOYOTA</option>
+                        <option value="23234">VOLKSWAGEN</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <b>MODELO</b>
+                    </label>
+                    <input type="text" name="modelo" id="modelo" class="form-control"></input>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <b>PRECIO</b>
+                    </label>
+                    <input type="text" class="form-control search-slt" name="maxprice" id="maxprice">
+                </div>
+                <div class="col-md-3 p-3">
+                    <input type="submit" name="search" class="btn btn-cta fs-3 btn-outline-dark text-center" value="buscar">
+                </div>
+
+            </div>
+        </form>
+    </div>
     <section class="container-fluid">
         <div class="row w-5 mx-auto my-5 text-center">
             <div class="col-lg-6 col-md-12 col-sm-12">

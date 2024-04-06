@@ -8,25 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sedgwick+Ave&display=swap');
 
-body nav{
-    font-family: "Sedgwick Ave", cursive;
-    font-weight: 400;
-    font-style: normal;
-    overflow-x: hidden;
-}
-
-#menu a{
-    font-size: 18px;
-    font-weight: bold;
-    color: #3f3f3f;
-}
-
-#menu button{
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
 /* CARRUSEL */
 
 .carousel-inner{
@@ -46,7 +27,7 @@ body nav{
 li,a {
     padding: 10px;
     list-style-type: none;
-    color: wheat;
+    color: white;
 }
 
 p {
@@ -58,7 +39,7 @@ p {
 
 
 .grid-container{
-    background-color: #000000;
+    background-color: black;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100px 150px 10px auto auto auto 800px;
@@ -395,9 +376,10 @@ footer img {
         display: inline;
         margin: 0 10px;
         font-size: 18px;
-        color: aqua;
-        
-        
+        font-family: "Sedgwick Ave", cursive;
+        font-weight: 400;
+        font-style: normal;
+    
     }
     
     .navbar ul li a{

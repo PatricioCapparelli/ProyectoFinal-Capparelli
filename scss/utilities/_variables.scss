@@ -1,8 +1,22 @@
-// Agencia 
+// VARIABLES AGENCIA
+
+// colors
 $color-text: #9E1717;
 $color-text-secondary: white;
-$color-primary: black;
-$color-secondary: #15292F;
+
+// bg-colors
+$backgraund-primary: rgba(0, 0, 0, 0.7);
+$backgraund-secondary:  #070F2B;
+$backgraund-tertiary: black;
+$backgraund-quaternary: #15292F;
+$background-quinary:#1A3138;
+
+// measures
 $max-container-width: 1212px;
 $max-container-whidt: 1104px;
 $max-container-width: 964px;
+
+// typography
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Sedgwick Ave", cursive;
+

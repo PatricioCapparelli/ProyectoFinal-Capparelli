@@ -1,9 +1,19 @@
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: $font-primary;
     font-weight: 400;
     font-style: normal;
 }
 
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    font-size: 18px;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-style: normal;
+
+}
 .main h4{
     font-size: 20px;
     margin-top: 20px;
@@ -13,3 +23,4 @@ body{
 .main h5{
     font-size: 15px;
 }
+
