@@ -1,6 +1,73 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sedgwick+Ave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave&display=swap");
+@media (max-width: 1212px) {
+  aside {
+    display: flex auto;
+    height: 350px;
+    width: 100%;
+    background-color: #15292F;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
+
+@media (max-width: 1212px) {
+  aside .video-img img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1212px) {
+  img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1212px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
+
+@media (max-width: 1104px) {
+  aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+  }
+}
+
+@media (max-width: 1104px) {
+  aside .video-img {
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 964px) {
+  aside {
+    height: auto;
+  }
+}
+
+@media (max-width: 964px) {
+  img {
+    object-fit: cover;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +81,16 @@ body {
   font-style: normal;
 }
 
+.navbar ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .main h4 {
   font-size: 20px;
   margin-top: 20px;
@@ -23,12 +100,24 @@ body {
   font-size: 15px;
 }
 
-.navbar ul li {
-  list-style: none;
-  display: inline;
-  margin: 0 10px;
-  font-size: 18px;
-  color: aqua;
+.image {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.row aside img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.main img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .navbar ul li a {
@@ -43,7 +132,7 @@ body {
 }
 
 .main .best-car {
-  background-color: #070F2B;
+  background-color: #15292F;
   padding: 5px;
   color: white;
   border-radius: 10px;
@@ -71,6 +160,88 @@ body {
   opacity: 1;
 }
 
+header {
+  padding: 60px;
+  text-align: center;
+  background-image: url(../assets/images/auto11.jpg);
+}
+header .seis {
+  color: #9E1717;
+}
+header div {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.image {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+aside {
+  flex: 30 auto;
+  padding: 20px;
+  background-color: #15292F;
+  height: auto;
+}
+
+.row aside img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.main {
+  flex: 70%;
+  height: 100%;
+  background-color: #1A3138;
+  padding: 20px;
+}
+
+.main .audi-rocho {
+  color: #9E1717;
+}
+
+.main .camaro-desp {
+  color: #9E1717;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #070F2B;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.end-image {
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+}
+
 .end-line ul li {
   text-align: center;
   list-style-type: none;
@@ -89,193 +260,6 @@ body {
 .end-line ul li:nth-child(even)::marker {
   content: "🚗";
   color: white;
-}
-
-header {
-  padding: 60px;
-  text-align: center;
-  background-image: url(../assets/images/auto11.jpg);
-}
-header .image {
-  width: 200px;
-  height: 100px;
-  border-radius: 10px;
-}
-header .seis {
-  color: #9E1717;
-}
-header div {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  color: white;
-  border-radius: 10px;
-}
-
-.main {
-  flex: 70%;
-  height: 100%;
-  background-color: #1A3138;
-  padding: 20px;
-}
-.main img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.main .audi-rocho {
-  color: #9E1717;
-}
-.main .camaro-desp {
-  color: #9E1717;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-aside {
-  flex: 30 auto;
-  padding: 20px;
-  background-color: #15292F;
-  height: auto;
-}
-aside .video-img img {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-}
-
-@media (max-width: 1104px) {
-  aside {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: auto;
-  }
-  aside .video-img {
-    flex-direction: column;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  background-color: #070F2B;
-}
-
-.video-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  padding-top: 30px;
-  background-color: black;
-  align-items: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-.video-container .end-image {
-  border-radius: 10px;
-  width: 150px;
-  height: auto;
-}
-
-.row aside {
-  flex: 30 auto;
-  padding: 20px;
-  background-color: #15292F;
-  height: auto;
-}
-.row aside .video-img img {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-.row .main {
-  flex: 70%;
-  height: 100%;
-  background-color: #1A3138;
-  padding: 20px;
-}
-
-.main {
-  background-color: #1A3138;
-}
-
-.color-red {
-  background-color: red;
-}
-
-.color-blue {
-  background-color: blue;
-}
-
-.color-white {
-  background-color: white;
-}
-
-.color-black {
-  background-color: black;
-}
-
-.color-green {
-  background-color: green;
-}
-
-.color-yellow {
-  background-color: yellow;
-}
-
-.color-orange {
-  background-color: orange;
-}
-
-.color-gray {
-  background-color: gray;
-}
-
-.color-pink {
-  background-color: pink;
-}
-
-.color-brown {
-  background-color: brown;
-}
-
-.bg-text {
-  background-color: #9E1717;
-}
-
-.bg-text-secondary {
-  background-color: white;
-}
-
-.bg-primary {
-  background-color: black;
-}
-
-.bg-secondary {
-  background-color: #070F2B;
-}
-
-.main .best-car {
-  background-color: #070F2B;
 }
 
 /*# sourceMappingURL=main.css.map */

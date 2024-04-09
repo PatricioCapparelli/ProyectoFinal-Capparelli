@@ -1,17 +1,38 @@
 .video-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px ;
     padding-top: 30px;
     background-color: black;
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
-    & .end-image{
-        border-radius: 10px;
-        width: 150px;
-        height: auto;
-    }
     
 }
+.end-image{
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+}
+
+.end-line ul li{
+    text-align: center;
+    list-style-type: none;
+    color: wheat;
+}
+.end-line ul{
+    padding-top: 15px;
+    
+}
+
+.end-line a{
+    display: flex;
+    justify-content: center;
+}
+
+.end-line ul li:nth-child(even)::marker{
+    content: "🚗";
+    color: white;
+}
+

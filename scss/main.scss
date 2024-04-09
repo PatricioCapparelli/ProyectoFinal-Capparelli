@@ -1,7 +1,9 @@
 @import "utilities/variables";
+@import "utilities/mixins";
 @import "base/reset";
 @import "base/fonts";
 @import "base/typography";
+@import "base/images";
 @import "components/buttons";
 @import "layout/header";
 @import "layout/layout";
@@ -9,89 +11,91 @@
 @import "layout/footer";
 @import "components/row";
 
-// condicionales
-$page-type: "agencia";
 
-@if $page-type == "agencia" {
-.main {
-    background-color: #1A3138;
-}
-}
+
+// condicionales
+// $page-type: "agencia";
+
+// @if $page-type == "agencia" {
+// .main {
+//     background-color: #1A3138;
+// }
+// }
 
 // bucles
 
-$colors: red, blue, white , black , green, yellow, orange, gray, pink, brown;
+// $colors: red, blue, white , black , green, yellow, orange, gray, pink, brown;
 
-@for $iterador from 1 through length($colors){
-    .color-#{nth($colors, $iterador)}{
-        background-color: nth($colors, $iterador);
-    }
-}
+// @for $iterador from 1 through length($colors){
+//     .color-#{nth($colors, $iterador)}{
+//         background-color: nth($colors, $iterador);
+//     }
+// }
 
 // maps
 
-$colors:(
-    text: #9E1717,
-    text-secondary: white,
-    primary: black,
-    secondary: #070F2B,
-);
+// $colors:(
+//     text: #9E1717,
+//     text-secondary: white,
+//     primary: black,
+//     secondary: #070F2B,
+// );
 
-@each $color, $value in $colors{
-    .bg-#{$color}{
-        background-color: $value;
-    }
-}
+// @each $color, $value in $colors{
+//     .bg-#{$color}{
+//         background-color: $value;
+//     }
+// }
 
 // map-get
 
-.main .best-car{
-    background-color: map-get($colors, secondary);
-}
+// .main .best-car{
+//     background-color: map-get($colors, secondary);
+// }
 
 // extend (ejemplo)
 
-.alert{
-    padding: 5px;
-    margin: 7px;
-    border-radius: 1px;
-}
+// .alert{
+//     padding: 5px;
+//     margin: 7px;
+//     border-radius: 1px;
+// }
 
-.alert-danger{
-    @extend .alert;
-    background-color: #9E1717;
-    color: white;
-}
+// .alert-danger{
+//     @extend .alert;
+//     background-color: #9E1717;
+//     color: white;
+// }
 
-.alert-succes{
-    @extend .alert;
-    background-color: green;
-    color: white;
-}
+// .alert-succes{
+//     @extend .alert;
+//     background-color: green;
+//     color: white;
+// }
 
 // mixin (ejemplo)
 
-@mixin create-card($color){
-    padding: 5px;
-    border-radius: 1px;
-    border: solid 1px black;
-}
+// @mixin create-card($color){
+//     padding: 5px;
+//     border-radius: 1px;
+//     border: solid 1px black;
+// }
 
-@if $color == primary {
-    background-color: $primary-color;
-} @else if $color == secondary {
-    background-color: $secondary-color;
-} @else if $color == tertiary {
-    background-color: $tertiary-color;
-} @else {
-    background-color: $color;
-}
+// @if $color == primary {
+//     background-color: $primary-color;
+// } @else if $color == secondary {
+//     background-color: $secondary-color;
+// } @else if $color == tertiary {
+//     background-color: $tertiary-color;
+// } @else {
+//     background-color: $color;
+// }
 
 
-.card-primary {
-    @include create-card(primary)
-}
+// .card-primary {
+//     @include create-card(primary)
+// }
 
-.card-secondary{
-    @include create-card(secondary)
-}
+// .card-secondary{
+//     @include create-card(secondary)
+// }
