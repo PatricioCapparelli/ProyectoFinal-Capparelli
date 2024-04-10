@@ -36,3 +36,31 @@
     color: white;
 }
 
+// MODELOS
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.end-image{
+    border-radius: 10px;
+}
+
+.end-line{
+    text-align: center;
+}
+.end-line ul{
+    padding-top: 15px;
+}
+
+.end-line ul li:nth-child(even)::marker{
+    content: "🚗";
+    color: black;
+}

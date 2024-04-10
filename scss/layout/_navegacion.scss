@@ -6,3 +6,25 @@
     background-color:  $backgraund-secondary;
     
 }
+
+// MODELOS
+
+.nav-izquierda{
+    display: flex;
+    padding-top: 30px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.logo{
+    width: 500px;
+    height: 100pxpx;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.nav-derecha{
+    padding-top: 30px;
+    padding-left: 40px;
+}

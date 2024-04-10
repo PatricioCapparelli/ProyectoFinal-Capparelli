@@ -17,3 +17,33 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+
+// MODELOS
+
+.img-parrafo-uno{
+    display: flex;
+    width: 660px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.img-parrafo .img-autorojo{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+
+.img-parrafo .img-autos{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    object-fit: conver;
+    border-radius: 8px;
+}

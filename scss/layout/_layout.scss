@@ -32,3 +32,22 @@ aside{
 .main .camaro-desp{
     color: $color-text;
 }
+
+// modelos
+
+
+section.parrafo {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #070F2B;
+}
+
+
+.img-parrafo{
+    display: flex;
+    gap: 5;
+    background-color: #1A3138;
+}
