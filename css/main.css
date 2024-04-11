@@ -349,6 +349,12 @@ header {
 header .seis {
   color: #9E1717;
 }
+header .siete {
+  color: white;
+}
+header .ocho {
+  color: #005B41;
+}
 header div {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
