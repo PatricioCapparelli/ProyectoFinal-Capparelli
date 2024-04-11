@@ -1,0 +1,16 @@
+.grid-container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 150px 10px auto auto auto 800px;
+    grid-template-areas:
+        "header header"
+        "nav-izquierda nav-derecha"
+        "nav-izquierda nav-derecha"
+        "parrafo parrafo"
+        "img img"
+        "img img"
+        "footer footer"
+        "footer footer"
+    ;
+}

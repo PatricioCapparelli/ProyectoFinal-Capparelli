@@ -36,18 +36,32 @@ aside{
 // modelos
 
 
-section.parrafo {
-    align-items: center;
+section.img-parrafo {
+    grid-area: img;
+    border-radius: 10px;
     justify-content: center;
     align-content: center;
     display: flex;
-    flex-direction: column;
-    background-color: #070F2B;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+    @include media-up(mdm){
+        flex-wrap: wrap;
+    }
 }
 
-
-.img-parrafo{
+section.parrafo {
+    grid-area: parrafo;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    align-content: center;
     display: flex;
-    gap: 5;
-    background-color: #1A3138;
+    flex-direction: column;
+}
+
+aside{
+    flex-wrap: wrap;
 }
