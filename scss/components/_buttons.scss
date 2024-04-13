@@ -8,6 +8,7 @@
 .navbar ul li a:hover{
     background-color: $backgraund-tertiary;
     color: $color-text;
+    transition: all 0.5s ease-out allow-discrete;
 }
 
 .main .best-car{
@@ -20,6 +21,7 @@
 
 .main .best-car:hover{
     background-color: $color-text;
+    color: $backgraund-tertiary;
 }
 
 .video-link h4{
@@ -40,3 +42,33 @@
     opacity: 1;
 }
 
+h6{
+    font-size: 21px;
+    background-color: $color-ocho;
+    border-radius: 10px;
+    & a{
+        color: $backgraund-tertiary;
+    }
+    & a:hover {
+        color: $color-text-secondary;
+    }
+}
+
+h6:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-out allow-discrete;
+    background-color: $color-text;
+}
+
+.end-line-bts{
+    background-color: $backgraund-tertiary;
+
+    & a:hover{
+        transition: all 0.5s ease-out allow-discrete;
+    }
+}
+
+.end-line-bts:hover{
+    background-color: $backgraund-tertiary;
+    transform: scale(1.3);
+}

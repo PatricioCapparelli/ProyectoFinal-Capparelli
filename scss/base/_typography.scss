@@ -40,8 +40,10 @@ h6{
     & a{
         color: $backgraund-tertiary;
     }
+    & a:hover {
+        color:$color-text;
+    }
 }
-
 // MODELOS
 
 header h1{
