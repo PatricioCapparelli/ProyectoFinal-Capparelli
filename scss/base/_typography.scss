@@ -23,17 +23,36 @@ body{
     font-size: 15px;
 }
 
+.main .audi-rocho{
+    color: $color-text;
+    font-size: 23px;
+}
+
+.main .camaro-desp{
+    color: $color-text;
+    font-size: 23px;
+}
+
+h6{
+    font-size: 21px;
+    background-color: $color-ocho;
+    border-radius: 10px;
+    & a{
+        color: $backgraund-tertiary;
+    }
+}
+
 // MODELOS
 
 header h1{
     padding-top: 30px;
     font-size: 35px;
-    color: black;
+    color: $backgraund-tertiary;
 }
 
 header h2{
     font-size: 35px;
-    color: #CD2014;
+    color: $color-text-primary;
     padding-top: 30px;
 }
 

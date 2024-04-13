@@ -12,9 +12,9 @@ header{
         color: $color-ocho;
     }
     & div{
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: $backgraund-primary;
         padding: 10px;
-        color: white;
+        color: $color-text-secondary;
         border-radius: 10px;
     }
     

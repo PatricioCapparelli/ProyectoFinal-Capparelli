@@ -4,7 +4,7 @@
     justify-content: space-around;
     padding: 20px ;
     padding-top: 30px;
-    background-color: black;
+    background-color: $backgraund-tertiary;
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
@@ -19,7 +19,7 @@
 .end-line ul li{
     text-align: center;
     list-style-type: none;
-    color: wheat;
+    color: $color-text-secondary;
 }
 .end-line ul{
     padding-top: 15px;
@@ -33,7 +33,7 @@
 
 .end-line ul li:nth-child(even)::marker{
     content: "🚗";
-    color: white;
+    color: $color-text-secondary;
 }
 
 // MODELOS
@@ -46,7 +46,7 @@ footer {
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: $backgraund-tertiary;
 }
 
 .end-image{
@@ -62,5 +62,5 @@ footer {
 
 .end-line ul li:nth-child(even)::marker{
     content: "🚗";
-    color: black;
+    color: $backgraund-tertiary;
 }

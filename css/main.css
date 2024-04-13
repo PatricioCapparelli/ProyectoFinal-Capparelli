@@ -234,6 +234,25 @@ body {
   font-size: 15px;
 }
 
+.main .audi-rocho {
+  color: #9E1717;
+  font-size: 23px;
+}
+
+.main .camaro-desp {
+  color: #9E1717;
+  font-size: 23px;
+}
+
+h6 {
+  font-size: 21px;
+  background-color: #005B41;
+  border-radius: 10px;
+}
+h6 a {
+  color: black;
+}
+
 header h1 {
   padding-top: 30px;
   font-size: 35px;
@@ -416,14 +435,6 @@ aside {
   padding: 20px;
 }
 
-.main .audi-rocho {
-  color: #9E1717;
-}
-
-.main .camaro-desp {
-  color: #9E1717;
-}
-
 section.img-parrafo {
   grid-area: img;
   border-radius: 10px;
@@ -502,7 +513,7 @@ div.nav-derecha {
 .end-line ul li {
   text-align: center;
   list-style-type: none;
-  color: wheat;
+  color: white;
 }
 
 .end-line ul {

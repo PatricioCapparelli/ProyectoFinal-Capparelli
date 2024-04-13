@@ -106,7 +106,7 @@ $medida: (
 }
 
 body{
-    background-color: black;
+    background-color: $backgraund-tertiary;
     @include media-up(lgl){
         .logo {
             max-width: 100px;
@@ -117,7 +117,7 @@ body{
         li,a {
             padding: 10px;
             list-style-type: none;
-            color: white;
+            color: $color-text-secondary;
             font-family: $font-secondary;
         }
         
@@ -128,7 +128,7 @@ body{
         
         }
         .grid-container{
-            background-color: black;
+            background-color: $backgraund-tertiary;
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 100px 150px 10px auto auto auto auto;
@@ -156,12 +156,12 @@ body{
         header h1{
             padding-top: 30px;
             font-size: 35px;
-            color: black;
+            color: $backgraund-tertiary;
         }
         
         header h2{
             font-size: 35px;
-            color: #CD2014;
+            color: $color-text-primary;
             padding-top: 30px;
         }
         
@@ -197,12 +197,12 @@ body{
             flex-direction: column;
         }
         section.parrafo p:first-child{
-            background-color: #091016;
+            background-color: $background-color-primary;
             border-radius: 8px 8px 0 0;
         }
         
         section.parrafo p{
-            color: white;
+            color: $color-text-secondary;
         }
         
         section.img-parrafo {
@@ -222,7 +222,7 @@ body{
         }
         
         section.img-parrafo:nth-last-child(1){
-            background-color: #540407;
+            background-color: $backgraund-color-secondary;
         }
         
         section.img-parrafo img {
@@ -257,7 +257,7 @@ body{
         }
         
         footer.video-container-uno{
-            background-color: #15292F;
+            background-color: $backgraund-quaternary;
         }
         
         footer img {

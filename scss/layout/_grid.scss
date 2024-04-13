@@ -1,5 +1,5 @@
 .grid-container{
-    background-color: black;
+    background-color: $backgraund-tertiary;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100px 150px 10px auto auto auto 800px;
