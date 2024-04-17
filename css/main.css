@@ -502,6 +502,10 @@ aside {
   flex-wrap: wrap;
 }
 
+.nosotros {
+  text-align: justify;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
